@@ -190,7 +190,7 @@
     <Compile Include="Models\Role.cs" />
     <Compile Include="Models\RoleMembership.cs" />
     <Compile Include="Models\Schema.cs" />
-    <Compile Include="Models\SupplyContext.cs" />
+    <Compile Include="Models\MigrateContext.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
