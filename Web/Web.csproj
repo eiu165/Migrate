@@ -169,6 +169,29 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\Config.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Log.cs" />
+    <Compile Include="Models\Login.cs" />
+    <Compile Include="Models\Mapping\ConfigMap.cs" />
+    <Compile Include="Models\Mapping\CustomerMap.cs" />
+    <Compile Include="Models\Mapping\LoginMap.cs" />
+    <Compile Include="Models\Mapping\LogMap.cs" />
+    <Compile Include="Models\Mapping\MovieMap.cs" />
+    <Compile Include="Models\Mapping\ProductMap.cs" />
+    <Compile Include="Models\Mapping\ProspectMap.cs" />
+    <Compile Include="Models\Mapping\RoleMap.cs" />
+    <Compile Include="Models\Mapping\RoleMembershipMap.cs" />
+    <Compile Include="Models\Mapping\SchemaMap.cs" />
+    <Compile Include="Models\Mapping\UserMap.cs" />
+    <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Prospect.cs" />
+    <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\RoleMembership.cs" />
+    <Compile Include="Models\Schema.cs" />
+    <Compile Include="Models\SupplyContext.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
