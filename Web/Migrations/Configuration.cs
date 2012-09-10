@@ -4,13 +4,15 @@ namespace Web.Migrations
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+using Web.Models;
 
     internal sealed class Configuration : DbMigrationsConfiguration<Web.Models.SupplyContext>
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
             AutomaticMigrationDataLossAllowed = true;
+            //DropCreateDatabaseAlways<SupplyContext> = true;
 
         }
 
@@ -28,6 +30,10 @@ namespace Web.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+            context.Customers.AddOrUpdate(
+                x => x.FirstName,
+                    new Customer { FirstName = "aaa", LastName = "aaa", Email = "aaa@a.com" }
+                    );
         }
     }
 }
