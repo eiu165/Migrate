@@ -5,18 +5,16 @@ namespace Web.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Web.Models.UsersContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<Web.Models.SupplyContext>
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationsEnabled = false;
             AutomaticMigrationDataLossAllowed = true;
-            
 
-            //DropCreateDatabaseAlways = true;
         }
 
-        protected override void Seed(Web.Models.UsersContext context)
+        protected override void Seed(Web.Models.SupplyContext context)
         {
             //  This method will be called after migrating to the latest version.
 

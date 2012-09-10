@@ -4,15 +4,15 @@ using Web.Models.Mapping;
 
 namespace Web.Models
 {
-    public class MigrateContext : DbContext
+    public class SupplyContext : DbContext
     {
-        static MigrateContext()
+        static SupplyContext()
         {
-            Database.SetInitializer<MigrateContext>(null);
+            Database.SetInitializer<SupplyContext>(null);
         }
 
-		public MigrateContext()
-			: base("Name=MigrateContext")
+		public SupplyContext()
+			: base("Name=SupplyContext")
 		{
 		}
 
