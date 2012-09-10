@@ -64,6 +64,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Config.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Log.cs" />
@@ -85,7 +86,7 @@
     <Compile Include="Models\Role.cs" />
     <Compile Include="Models\RoleMembership.cs" />
     <Compile Include="Models\Schema.cs" />
-    <Compile Include="Models\SupplyContext.cs" />
+    <Compile Include="Models\AppDbContext.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
