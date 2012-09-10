@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Web.Models;
 
 namespace Web.Controllers
 {
@@ -20,6 +21,26 @@ namespace Web.Controllers
             ViewBag.Message = "Your app description page.";
 
             return View();
+        }
+
+
+
+        private readonly MigrateContext _context = new MigrateContext();
+         
+
+
+        public ActionResult Create(Customer c)
+        {
+            _context.Customers.Add(c);
+            _context.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
+
+
+        public ActionResult Customers()
+        { 
+            return View(_context.Customers); 
         }
 
         public ActionResult Contact()

@@ -9,7 +9,11 @@ namespace Web.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
+            
+
+            //DropCreateDatabaseAlways = true;
         }
 
         protected override void Seed(Web.Models.UsersContext context)

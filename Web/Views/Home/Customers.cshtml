@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Web.Models.Customer>
+
+
+
+@{
+    ViewBag.Title = "Customers";
+}
+
+<h2>Customers</h2>
+
+
+
+<ul>
+	@foreach (var c in Model)
+	{
+		<li>@c.FirstName (@c.Email )     </li>
+	}
+</ul>
+
+@using(Html.BeginForm("Create", "Home", FormMethod.Post))
+{
+	<span>FirstName</span><input type="text" name="FirstName" />
+	
+	<span>email</span><input type="text" name="Email" />
+     	
+     
+    
+    <input type="submit" value="Submit" />
+}
+
+
+
