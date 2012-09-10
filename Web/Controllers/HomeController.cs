@@ -1,29 +1,32 @@
-﻿using System.Web.Mvc;
-using Web.Models;
-
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
 
 namespace Web.Controllers
 {
-	public class HomeController : Controller
-	{
-        private readonly AppDbContext _context = new AppDbContext();
-
+    public class HomeController : Controller
+    {
         public ActionResult Index()
         {
-            return View(_context.Users);
+            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
+
+            return View();
         }
 
         public ActionResult About()
         {
+            ViewBag.Message = "Your app description page.";
+
             return View();
         }
 
-		public ActionResult Create(User user)
-		{
-			_context.Users.Add(user);
-			_context.SaveChanges();
+        public ActionResult Contact()
+        {
+            ViewBag.Message = "Your contact page.";
 
-			return RedirectToAction("Index");
-		}
-	}
+            return View();
+        }
+    }
 }
